@@ -1,2 +1,3 @@
 # pot-ui
-A library for React components
+A library for React 17 components. 
+Full typescript supported.
