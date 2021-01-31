@@ -21,7 +21,7 @@ export default class Font extends React.Component<FontProps, {}> {
                     ...weightStyle
                 }}
             >
-
+                { this.props.children }
             </span>
         );
     }
