@@ -5,7 +5,7 @@ interface ButtonProps {
     appearance: 'default' | 'primary'
 }
 
-class Button extends React.Component<ButtonProps> {
+class Button extends React.Component<ButtonProps, {}> {
     render() {
         const className = 'pot-btn'
             + this.props.appearance === 'primary' ? ' primary' : ''
