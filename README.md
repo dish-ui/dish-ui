@@ -1,9 +1,12 @@
 # pot-ui
 ## About
 Pot UI is a library for React 17 components,
-it's developer-friendly and easy to use. 
+it's developer-friendly and easy to use.
 
 Design references: **Fluent Design**, **Material Design**, **React Suite**
+
+### Style
+PotUI will only have 2 basic colors in our excepted: blue and gray
 
 ## Platform Supports
 Due to our modern design, and we started late, we supported **modern** browsers only.
