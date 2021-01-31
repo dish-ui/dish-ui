@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getNoop from '../utils/getNoop';
 
 interface ButtonProps {
     appearance: 'default' | 'primary',
@@ -29,7 +30,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
     appearance: 'default',
-    onClick: () => {}
+    onClick: getNoop()
 }
 
 export default Button;
