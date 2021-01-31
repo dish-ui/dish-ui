@@ -1,4 +1,5 @@
 @import '../styles/vars';
+@import '../styles/mixins/noPaddingMargin';
 
 button.btn {
   padding: 5px;
@@ -9,9 +10,9 @@ button.btn {
   &:hover {
     background-color: $G300;
   }
-
   &:focus {}
 
+  /* Types of button */
   &.primary {
     background-color: $B300;
     border: 1px solid $B900;
@@ -19,5 +20,16 @@ button.btn {
     &:hover {
       background-color: $B500;
     }
+  }
+
+  .pot-btn-prefix {
+    @include noPaddingMargin;
+  }
+  .pot-btn-text {
+    @include noPaddingMargin;
+    margin: {
+      left: auto;
+      right: auto;
+    };
   }
 }
