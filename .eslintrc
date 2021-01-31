@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "amd": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "quotes": [2, "single", "avoid-escape"]
+  }
+}
