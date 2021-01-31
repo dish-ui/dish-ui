@@ -3,33 +3,29 @@ import PropTypes from 'prop-types';
 
 interface FontProps {
     size: number,
-    weight: number
+    weight: number,
+    children: React.ReactNode
 }
 
-export default class Font extends React.Component<FontProps, {}> {
-    render(): React.ReactNode {
-        const sizeStyle = this.props.size ? {
-            fontSize: this.props.size
-        } : {};
-        const weightStyle = this.props.weight ? {
-            fontWeight: this.props.weight
-        } : {};
-        return (
-            <span
-                style={{
-                    ...sizeStyle,
-                    ...weightStyle
-                }}
-            >
-                { this.props.children }
-            </span>
-        );
-    }
+function Font(props: FontProps): React.ReactNode {
+    const { size, weight, children } = props;
 
-    static propTypes = {
-        size: PropTypes.number,
-        weight: PropTypes.number
-    }
-
-    static defaultProps = {}
+    const style: React.CSSProperties = {};
+    size ? style.fontSize = size : void 0;
+    weight ? style.fontWeight = weight : void 0;
+    return (
+        <span style={style}>
+            { children }
+        </span>
+    );
 }
+
+
+Font.propTypes = {
+    size: PropTypes.number,
+    weight: PropTypes.number
+}
+
+Font.defaultProps = {}
+
+export default Font

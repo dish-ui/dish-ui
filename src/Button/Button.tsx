@@ -2,28 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 interface ButtonProps {
-    appearance: 'default' | 'primary'
+    appearance: 'default' | 'primary',
+    prefix: React.ReactNode,
+    children: React.ReactNode
 }
 
-class Button extends React.Component<ButtonProps, {}> {
-    render(): React.ReactNode {
-        const className = 'pot-btn'
-            + this.props.appearance === 'primary' ? ' primary' : ''
+function Button(props: ButtonProps): React.ReactNode {
+    const { appearance, prefix, children } = props
+    const className = 'pot-btn'
+        + ' ' + appearance
 
-        return (
-            <button className={className}>
-                { this.props.children }
-            </button>
-        );
-    }
+    return (
+        <button className={ className }>
+            <span className="pot-btn-prefix">{ prefix }</span>
+            <span className="pot-btn-text">{ children }</span>
+        </button>
+    );
+}
 
-    static propTypes = {
-        appearance: PropTypes.oneOf(['default', 'primary']),
-    }
+Button.propTypes = {
+    appearance: PropTypes.oneOf(['default', 'primary']),
+    prefix: PropTypes.any
+}
 
-    static defaultProps = {
-        appearance: 'default'
-    }
+Button.defaultProps = {
+    appearance: 'default'
 }
 
 export default Button;
