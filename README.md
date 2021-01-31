@@ -1,15 +1,30 @@
 # pot-ui
-A library for React 17 components. 
-Full typescript supported.
+## About
+Pot UI is a library for React 17 components,
+it's developer-friendly and easy to use. 
+
+Design references: **Fluent Design**, **Material Design**, **React Suite**
+
+## Platform Supports
+Due to our modern design, and we started late, we supported **modern** browsers only.
+
+## Environments Supports
+- React 17+
+- TypeScript
+- Electron
 
 ## Installation
-*Using in create-react-app*
+Please make sure you installed React **17** with create-react-app
 
-Install package
-```shell
-$ npm install pot-ui --save
-```
-Import
-```js
-import { /* components */ } from 'pot-ui'
-```
+1. Install package
+  ```shell
+  # Yarn
+  yarn add pot-ui
+  
+  # NPM
+  npm install pot-ui --save
+  ```
+2. Import
+  ```tsx
+  import * as PotUI from 'pot-ui'
+  ```
