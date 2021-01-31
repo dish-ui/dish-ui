@@ -11,8 +11,7 @@ module.exports = {
 			'.tsx',
 			'.js',
 			'.jsx',
-			'.scss',
-			'.less'
+			'.scss'
 		]
 	},
 	mode: 'production',
@@ -33,6 +32,14 @@ module.exports = {
 						]
 					}
 				}
+			},
+			{
+				test: /\.scss$/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader',
+				]
 			}
 		]
 	}
