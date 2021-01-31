@@ -7,7 +7,7 @@ interface FontProps {
 }
 
 export default class Font extends React.Component<FontProps, {}> {
-    render() {
+    render(): React.ReactNode {
         const sizeStyle = this.props.size ? {
             fontSize: this.props.size
         } : {};
