@@ -1,3 +1,3 @@
 import Button from './Button';
-import './styles.scss'
+import './style.scss'
 export default Button;

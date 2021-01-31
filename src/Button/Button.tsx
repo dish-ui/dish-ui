@@ -1,10 +1,29 @@
 import React from 'react';
-export default class Button extends React.Component {
+import PropTypes from 'prop-types';
+
+interface ButtonProps {
+    appearance: 'default' | 'primary'
+}
+
+class Button extends React.Component<ButtonProps> {
     render() {
+        const className = 'pot-button'
+            + this.props.appearance === 'primary' ? ' primary' : ''
+
         return (
-            <button className="pot-button">
+            <button className={className}>
                 { this.props.children }
             </button>
         );
     }
+
+    static propTypes = {
+        appearance: PropTypes.oneOf(['default', 'primary']),
+    }
+
+    static defaultProps = {
+        appearance: 'default'
+    }
 }
+
+export default Button;
