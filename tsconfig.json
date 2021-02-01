@@ -9,7 +9,7 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "moduleResolution": "node",
-    "target": "esnext",
+    "target": "ES2020",
     "jsx": "react",
     "types": [
       "react"

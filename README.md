@@ -1,4 +1,5 @@
-# pot-ui
+# POT UI
+A components pack for React.
 ## About
 Pot UI is a library for React 17 components,
 it's developer-friendly and easy to use.
