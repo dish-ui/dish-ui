@@ -1,7 +1,9 @@
 @import '../styles/vars';
 @import '../styles/mixins/noPaddingMargin';
+@import '../styles/mixins/ripple';
 
 button.btn {
+  @include ripple-parent;
   padding: 5px;
   border-radius: 5px;
   background-color: $G100;
@@ -31,5 +33,12 @@ button.btn {
       left: auto;
       right: auto;
     };
+  }
+
+  .pot-ripple {
+    @include ripple;
+    .animate {
+      @include ripple-animating;
+    }
   }
 }

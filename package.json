@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "dependencies": {
     "@types/react": "^17.0.0",
+    "dom-lib": "^2.0.2",
     "prop-types": "^15.7.2",
     "react": "^17.0.1"
   },

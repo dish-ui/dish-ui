@@ -1,0 +1,27 @@
+@keyframes ripple-animation {
+  to {
+    transform: scale(12);
+    background-color: transparent;
+  }
+}
+
+@mixin ripple-parent {
+  position: relative;
+}
+
+@mixin ripple {
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 100%;
+  height: 5vm;
+  width: 5vm;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+}
+
+@mixin ripple-animating {
+  animation-name: ripple-animation;
+  animation-duration: 0.5s;
+}
