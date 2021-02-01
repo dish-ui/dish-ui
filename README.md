@@ -1,5 +1,6 @@
 # POT UI
 A components pack for React.
+
 ## About
 Pot UI is a library for React 17 components,
 it's developer-friendly and easy to use.
@@ -10,9 +11,6 @@ that are not part or plugin of pot-ui,
 which may cause conflicts.
 
 Design references: **Fluent Design**, **Material Design**, **React Suite**
-
-### Style
-PotUI will only have 2 basic colors in our excepted: blue and gray
 
 ## Platform Supports
 Due to our modern design, and we started late, we supported **modern** browsers only.
@@ -32,6 +30,8 @@ Please make sure you installed React **17** with create-react-app
   
   # NPM
   npm install pot-ui --save
+  # NPM (Shorthand)
+  npm i pot-ui -S
   ```
 2. Import
   ```tsx
