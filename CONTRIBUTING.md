@@ -1,7 +1,7 @@
 # Contribute to Pot UI
 ✨🎉 Thanks for taking your time to contribute 🎉✨
 
-The following tutorial will guide you through the co ntribution.
+The following tutorial will guide you through the contribution.
 
 ## Contents
 - [For questions](#for-questions)
@@ -66,13 +66,33 @@ footer
   - **refactor**: refactor the code, but does not affect the effect.
   - **pref**: performance update.
   - **chore**: update not related to code and documents, include package dependencies update.
-- Use written and neutral vocabulary
+- *footer* is a optional item for commit footer.
+  - *footer* should be start with `BREAKING CHANGE` and continue with breaking update details if this is a breaking update.
+  - if the commit is making for an issue, close issue should add to *footer*
+  - if skip CI, the footer of *footer* should be `[SKIP CI]`.
+  - all of those is optional.
+- Use written and neutral vocabulary.
+- Use emoji directly instead of github emoji
+
+An example for all above options
+```text
+feat(jsx): add a component
+
+The component can use for full page container frame
+
+BREAKING CHANGE: Now <Modal.FullScreen> is removed and moved into 
+<FullScreenModal>
+
+Closes #1, Closes #2
+
+[skip ci]
+```
 
 ### JavaScript
 *If you are using IntelliJ IDEA series IDE, `.editorconfig` will automatically configure these parts*
 
 - Add space before import brackets
-- Use single quote string or back quote template string
+- Use sle quote string or back quote template string
 - Use ES import instead of `require`
 - Use inline export default
   ```jsx
@@ -80,7 +100,7 @@ footer
   export default function Component() {
       return <div></div>
   }
-  
+  ing
   // Wrong
   function Component() {
       return <div></div>
@@ -109,7 +129,7 @@ footer
   y=x++
   (param=1)=>param
   ```
-- Most aaming should be camelCase
+- Most naming should be camelCase
   - `thatIsFunctionName` instead `that_is_function_name`
 - Class and react component should be PascalCase
   - `ComponentOne` instead `componentOne`
