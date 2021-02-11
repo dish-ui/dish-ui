@@ -10,9 +10,7 @@ The following tutorial will guide you through the contribution.
   - [Pull request](#pull-request)
 - [Style guides](#styles-guides)
   - [Git commit message](#commit-messages)
-  - [JavaScript](#javascript)
-  - [TypeScript](#typescript)
-  - [JSX](#react-jsx) 
+  - [JS, JSX, TS, TSX](#javascript-and-typescript-with-react)
 
 ## For questions         
 If this is your personal issue, please use discussion instead of issue,
@@ -88,93 +86,20 @@ Closes #1, Closes #2
 [skip ci]
 ```
 
-### JavaScript
+### JavaScript and TypeScript (with React)
 *If you are using IntelliJ IDEA series IDE, `.editorconfig` will automatically configure these parts*
 
 - Add space before import brackets
 - Use sle quote string or back quote template string
 - Use ES import instead of `require`
 - Use inline export default
-  ```jsx
-  // Correct
-  export default function Component() {
-      return <div></div>
-  }
-  ing
-  // Wrong
-  function Component() {
-      return <div></div>
-  }
-  
-  export default Component;
-  ```
+- Use React hooks instead class component
 - There should be spaces before and after any operator
-  ```js
-  // Correct
-  const a = 1 + 2 * 3,
-        b = 4 / 2
-        c = true ? 1 : 0
-        d = true || 3
-        e = false ?? 5
-  let x = 1;
-  y = x ++
-  (param = 1) => param
-  
-  // Wrong
-  const a=1+2*3, b=4/2
-        c=true?1 :0
-        d =true|| 3
-        e=false??5
-  let x=1;
-  y=x++
-  (param=1)=>param
-  ```
 - Most naming should be camelCase
-  - `thatIsFunctionName` instead `that_is_function_name`
 - Class and react component should be PascalCase
-  - `ComponentOne` instead `componentOne`
-- Other ESLint rules...
-
-### TypeScript
-- ALL rules in JavaScript
 - There should be one space after the type qualifier
 - No namespace
 - No classic import/export
-  ```ts
-  // Correct
-  import React from 'react';
-  export default React;
-  
-  // Wrong
-  // Never use this. Babel doesn't supported.
-  import React = require('react');
-  export = React
-  ```
-
-### React (JSX)
-- Use react hooks is better than a ES6 class component
-  ```jsx
-  // Correct
-  function Foo(props) {
-    return <div>{props.children}</div>
-  }
-  
-  // Wrong
-  class Foo {
-    render () {
-      return <div>{this.props.children}</div>
-    }
-  }
-  ```
+- Other ESLint default rules
 - It is recommended to add parentheses before and after JSX elements
-  ```jsx
-  // Better
-  return (
-    <div>
-      foo
-    </div>
-  )
-  
-  // Bad
-  return <div>foo</div>
-  ```
+
