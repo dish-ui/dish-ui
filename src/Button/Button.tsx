@@ -7,8 +7,10 @@ interface ButtonProps extends ComponentProps {
 }
 function Button(props: ButtonProps) {
     const { children, primary } = props
+    let classNameSuffix: string;
+    if (primary) classNameSuffix = '-primary'
     return (
-        <div className={ 'pot-button' + primary ? '-primary' : '' }>
+        <div className={ 'pot-button' + classNameSuffix }>
             { children }
         </div>
     )
