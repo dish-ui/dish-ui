@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ComponentProps from '../utils/ComponentProps';
+import ButtonFooter from './ButtonFooter';
 
 interface ButtonProps extends ComponentProps {
     primary: boolean,
     danger: boolean
 }
-function Button(props: ButtonProps) {
+function Button(props: ButtonProps): React.ReactNode {
     const { children, primary, danger } = props
     let classNameSuffix: string;
     if (primary) classNameSuffix = '-primary'
@@ -26,5 +27,7 @@ Button.defaultProps = {
     primary: false,
     danger: false
 }
+
+Button.Footer = ButtonFooter;
 
 export default Button;
