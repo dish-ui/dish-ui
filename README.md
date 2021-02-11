@@ -12,6 +12,10 @@ which may cause conflicts.
 
 Design references: **Fluent Design**, **Material Design**, **React Suite**
 
+### Style
+It's a half-plat modern style.
+There are not too many effects and rounded edges.
+
 ## Platform Supports
 Due to our modern design, and we started late, we supported **modern** browsers only.
 
