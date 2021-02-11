@@ -1,0 +1,26 @@
+@import '../style/vars';
+
+@mixin button-general {
+  padding: 5px;
+}
+.pot-button {
+  @include button-general;
+  border: 1px solid $G700;
+  &:hover {
+    background-color: $G200;
+    &:active {
+      background-color: $G300;
+    }
+  }
+
+  &-primary {
+    @include button-general;
+    background-color: $B500;
+    &:hover {
+      background-color: $B600;
+      &:active {
+        background-color: $B700;
+      }
+    }
+  }
+}
