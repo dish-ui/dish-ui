@@ -15,11 +15,23 @@
 
   &-primary {
     @include button-general;
+    color: $G50;
     background-color: $B500;
     &:hover {
       background-color: $B600;
       &:active {
         background-color: $B700;
+      }
+    }
+  }
+  &-danger {
+    @include button-general;
+    color: $G50;
+    background-color: $R400;
+    &:hover {
+      background-color: $R500;
+      &:active {
+        background-color: $R600;
       }
     }
   }
