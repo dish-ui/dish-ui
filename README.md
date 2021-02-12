@@ -17,7 +17,7 @@ It's a half-plat modern style.
 There are not too many effects and rounded edges.
 
 ## Platform Supports
-Due to our modern design, and we started late, we supported **modern** browsers only.
+Last two versions of all not-dead modern browsers
 
 ## Environments Supports
 - React 17+
