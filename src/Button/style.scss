@@ -3,11 +3,15 @@
 @mixin button-general {
   padding: 5px;
 }
+
 .pot-button {
   @include button-general;
+
   border: 1px solid $K700;
+
   &:hover {
     background-color: $K200;
+
     &:active {
       background-color: $K300;
     }
@@ -15,21 +19,28 @@
 
   &-primary {
     @include button-general;
+
     color: $K50;
     background-color: $B500;
+
     &:hover {
       background-color: $B600;
+
       &:active {
         background-color: $B700;
       }
     }
   }
+
   &-danger {
     @include button-general;
+
     color: $K50;
     background-color: $R400;
+
     &:hover {
       background-color: $R500;
+
       &:active {
         background-color: $R600;
       }

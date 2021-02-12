@@ -17,6 +17,7 @@
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.0.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
     "eslint": "^7.19.0",
@@ -25,13 +26,19 @@
     "sass-loader": "^10.1.1",
     "sass-node": "^4.11.2",
     "style-loader": "^2.0.0",
+    "stylelint": "^13.10.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.19.0",
     "ts-loader": "^8.0.14",
     "typescript": "^4.1.3",
     "webpack": "^5.19.0",
     "webpack-cli": "^4.4.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint",
+    "lint": "npm run lint:ts && npm run lint:style",
+    "lint:style": "npx stylelint \"src/**/*.scss\"",
+    "lint:ts": "npx eslint src/**/*.{ts,tsx}",
     "build": "npx webpack"
   },
   "repository": {
