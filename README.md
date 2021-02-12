@@ -1,6 +1,12 @@
 # POT UI
 A components pack for React.
 
+![License](https://img.shields.io/github/license/pot-ui/pot-ui?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/pot-ui/pot-ui?style=flat-square)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pot-ui/pot-ui?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/pot-ui/pot-ui?style=flat-square)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/pot-ui/pot-ui/main?style=flat-square)
+
 ## About
 Pot UI is a library for React 17 components,
 it's developer-friendly and easy to use.
