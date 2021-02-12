@@ -9,6 +9,9 @@ interface ButtonProps extends ComponentProps {
 }
 function Button(props: ButtonProps): React.ReactNode {
     const { children, primary, danger } = props
+
+    // For class name suffix
+    // The order should be reversed priority order
     let classNameSuffix: string = '';
     if (danger) classNameSuffix = 'danger';
     if (primary) classNameSuffix = 'primary';
