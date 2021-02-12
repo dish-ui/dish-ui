@@ -21,6 +21,7 @@
     "css-loader": "^5.0.1",
     "eslint": "^7.19.0",
     "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.2.1",
     "sass-loader": "^10.1.1",
     "sass-node": "^4.11.2",
     "style-loader": "^2.0.0",

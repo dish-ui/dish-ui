@@ -9,9 +9,10 @@ interface ButtonProps extends ComponentProps {
 }
 function Button(props: ButtonProps): React.ReactNode {
     const { children, primary, danger } = props
-    let classNameSuffix: string;
-    if (primary) classNameSuffix = '-primary'
-    if (danger) classNameSuffix = '-danger'
+    let classNameSuffix: string = '';
+    if (danger) classNameSuffix = 'danger';
+    if (primary) classNameSuffix = 'primary';
+
     return (
         <div className={ 'pot-button' + classNameSuffix }>
             { children }
