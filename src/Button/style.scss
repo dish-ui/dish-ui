@@ -5,17 +5,17 @@
 }
 .pot-button {
   @include button-general;
-  border: 1px solid $G700;
+  border: 1px solid $K700;
   &:hover {
-    background-color: $G200;
+    background-color: $K200;
     &:active {
-      background-color: $G300;
+      background-color: $K300;
     }
   }
 
   &-primary {
     @include button-general;
-    color: $G50;
+    color: $K50;
     background-color: $B500;
     &:hover {
       background-color: $B600;
@@ -26,7 +26,7 @@
   }
   &-danger {
     @include button-general;
-    color: $G50;
+    color: $K50;
     background-color: $R400;
     &:hover {
       background-color: $R500;
