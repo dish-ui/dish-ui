@@ -20,7 +20,8 @@ function Button(props: ButtonProps): React.ReactNode {
 }
 
 Button.propTypes = {
-    primary: PropTypes.bool
+    primary: PropTypes.bool,
+    danger: PropTypes.bool
 }
 
 Button.defaultProps = {
