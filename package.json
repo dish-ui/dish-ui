@@ -19,6 +19,7 @@
     "@typescript-eslint/eslint-plugin": "^4.14.1",
     "@typescript-eslint/parser": "^4.0.0",
     "babel-loader": "^8.2.2",
+    "conventional-changelog-cli": "^2.1.1",
     "css-loader": "^5.0.1",
     "eslint": "^7.19.0",
     "eslint-plugin-react": "^7.22.0",
@@ -36,6 +37,7 @@
   },
   "scripts": {
     "build": "npx webpack",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "lint": "npm run lint:ts && npm run lint:style",
     "lint:style": "npx stylelint \"src/**/*.scss\"",
     "lint:ts": "npx eslint src/**/*.{ts,tsx}",
