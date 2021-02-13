@@ -92,4 +92,5 @@ Closes #1, Closes #2
 When you finished your changed, type these in terminal
 ```shell
 npm run lint
+npm run format
 ```
