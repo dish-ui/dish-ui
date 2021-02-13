@@ -49,6 +49,7 @@
     "lint": "npm run lint:ts && npm run lint:style",
     "lint:style": "npx stylelint \"src/**/*.scss\"",
     "lint:ts": "npx eslint src/**/*.{ts,tsx}",
+    "prepare": "npm run build",
     "test": "npm run format:check && npm run lint"
   },
   "keywords": [
