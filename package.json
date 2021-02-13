@@ -43,9 +43,9 @@
   ],
   "scripts": {
     "build": "npx webpack",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "format": "prettier --write \"src/**/*.{tsx,ts,js}\"",
-    "format:check": "prettier --list-different \"src/**/*.{tsx,ts,js}\"",
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s",
+    "format": "npx prettier --write \"src/**/*.{tsx,ts,js}\"",
+    "format:check": "npx prettier --list-different \"src/**/*.{tsx,ts,js}\"",
     "lint": "npm run lint:ts && npm run lint:style",
     "lint:style": "npx stylelint \"src/**/*.scss\"",
     "lint:ts": "npx eslint src/**/*.{ts,tsx}",
