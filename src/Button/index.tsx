@@ -1,3 +1,3 @@
-import './style.scss'
+import './style.scss';
 
-export { default as default } from './Button'
+export { default as default } from './Button';

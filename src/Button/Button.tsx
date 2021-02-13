@@ -4,11 +4,11 @@ import ComponentProps from '../utils/ComponentProps';
 import ButtonFooter from './ButtonFooter';
 
 interface ButtonProps extends ComponentProps {
-    primary: boolean,
-    danger: boolean
+    primary: boolean;
+    danger: boolean;
 }
 function Button(props: ButtonProps): React.ReactNode {
-    const { children, primary, danger } = props
+    const { children, primary, danger } = props;
 
     // For class name suffix
     // The order should be reversed priority order
@@ -16,22 +16,18 @@ function Button(props: ButtonProps): React.ReactNode {
     if (danger) classNameSuffix = 'danger';
     if (primary) classNameSuffix = 'primary';
 
-    return (
-        <div className={ 'pot-button' + classNameSuffix }>
-            { children }
-        </div>
-    )
+    return <div className={'pot-button' + classNameSuffix}>{children}</div>;
 }
 
 Button.propTypes = {
     primary: PropTypes.bool,
-    danger: PropTypes.bool
-}
+    danger: PropTypes.bool,
+};
 
 Button.defaultProps = {
     primary: false,
-    danger: false
-}
+    danger: false,
+};
 
 Button.Footer = ButtonFooter;
 
