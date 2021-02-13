@@ -35,20 +35,34 @@
     "webpack": "^5.19.0",
     "webpack-cli": "^4.4.0"
   },
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "package.json",
+    "dist/"
+  ],
   "scripts": {
     "build": "npx webpack",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js}\"",
+    "format": "prettier --write \"src/**/*.{tsx,ts,js}\"",
+    "format:check": "prettier --list-different \"src/**/*.{tsx,ts,js}\"",
     "lint": "npm run lint:ts && npm run lint:style",
     "lint:style": "npx stylelint \"src/**/*.scss\"",
     "lint:ts": "npx eslint src/**/*.{ts,tsx}",
-    "test": "npm run lint"
+    "test": "npm run format:check && npm run lint"
   },
+  "keywords": [
+    "react",
+    "component",
+    "react-component",
+    "pot-ui",
+    "pot"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pot-ui/pot-ui.git"
   },
-  "author": "",
+  "author": "TechPot Studio",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pot-ui/pot-ui/issues"
