@@ -87,19 +87,9 @@ Closes #1, Closes #2
 ```
 
 ### JavaScript and TypeScript (with React)
-*If you are using IntelliJ IDEA series IDE, `.editorconfig` will automatically configure these parts*
+*All code style checks with ESLint and Prettier*
 
-- Add space before import brackets
-- Use sle quote string or back quote template string
-- Use ES import instead of `require`
-- Use inline export default
-- Use React hooks instead class component
-- There should be spaces before and after any operator
-- Most naming should be camelCase
-- Class and react component should be PascalCase
-- There should be one space after the type qualifier
-- No namespace
-- No classic import/export
-- Other ESLint default rules
-- It is recommended to add parentheses before and after JSX elements
-
+When you finished your changed, type these in terminal
+```shell
+npm run lint
+```

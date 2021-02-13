@@ -38,6 +38,7 @@
   "scripts": {
     "build": "npx webpack",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js}\"",
     "lint": "npm run lint:ts && npm run lint:style",
     "lint:style": "npx stylelint \"src/**/*.scss\"",
     "lint:ts": "npx eslint src/**/*.{ts,tsx}",
