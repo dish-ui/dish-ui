@@ -15,6 +15,14 @@ module.exports = {
 		]
 	},
 	mode: 'production',
+    externals: {
+        react: {
+            root: 'React',
+            commonjs2: 'react',
+            commonjs: 'react',
+            amd: 'react'
+        }
+    },
 	module: {
 		rules: [
 			{
