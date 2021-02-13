@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ComponentProps from '../utils/ComponentProps';
+import IComponentProps from '../utils/IComponentProps';
 import ButtonFooter from './ButtonFooter';
 
-interface ButtonProps extends ComponentProps {
+interface IButtonProps extends IComponentProps {
     primary: boolean;
     danger: boolean;
 }
-function Button(props: ButtonProps): React.ReactNode {
+function Button(props: IButtonProps): React.ReactNode {
     const { children, primary, danger } = props;
 
     // For class name suffix

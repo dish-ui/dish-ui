@@ -1,7 +1,7 @@
 import React from 'react';
-import ComponentProps from '../utils/ComponentProps';
+import IComponentProps from '../utils/IComponentProps';
 
-function ButtonFooter(props: ComponentProps): React.ReactNode {
+function ButtonFooter(props: IComponentProps): React.ReactNode {
     const { children } = props;
     return <div className="pot-button-footer">{children}</div>;
 }
