@@ -8,7 +8,7 @@ A components pack for React.
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/dish-ui/dish-ui/main?style=flat-square)
 
 ## About
-Pot UI is a library for React 17 components,
+Dish UI is a library for React 17 components,
 it's developer-friendly and easy to use.
 
 Please note that after installing dish-ui,
