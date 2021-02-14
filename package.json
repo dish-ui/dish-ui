@@ -47,6 +47,7 @@
     "format": "npx prettier --write \"src/**/*.{tsx,ts,js}\"",
     "format:check": "npx prettier --list-different \"src/**/*.{tsx,ts,js}\"",
     "lint": "npm run lint:ts && npm run lint:style",
+    "lint:fix": "npx eslint src/**/*.{ts,tsx} --fix",
     "lint:style": "npx stylelint \"src/**/*.scss\"",
     "lint:ts": "npx eslint src/**/*.{ts,tsx}",
     "prepare": "npm run build",
