@@ -1,4 +1,5 @@
 import Button from './Button';
 import Font from './Font';
+import Label from './Label';
 
-export { Button, Font };
+export { Button, Font, Label };
