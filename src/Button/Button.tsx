@@ -7,7 +7,7 @@ interface IButtonProps extends IComponentProps {
     primary: boolean;
     danger: boolean;
 }
-function Button(props: IButtonProps): React.ReactNode {
+function Button(props: IButtonProps): React.ReactElement {
     const { children, primary, danger } = props;
 
     // For class name suffix
