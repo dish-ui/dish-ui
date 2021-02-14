@@ -8,6 +8,7 @@ interface IButtonProps extends IComponentProps {
     danger: boolean;
     link: boolean;
 }
+
 function Button(props: IButtonProps): React.ReactElement {
     const { children, primary, danger, link } = props;
 
@@ -20,7 +21,7 @@ function Button(props: IButtonProps): React.ReactElement {
 
     if (classNameSuffix) classNameSuffix = '-' + classNameSuffix;
 
-    return <div className={'pot-button' + classNameSuffix}>{children}</div>;
+    return <div className={'pot-Button' + classNameSuffix}>{children}</div>;
 }
 
 Button.propTypes = {
