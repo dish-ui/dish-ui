@@ -18,7 +18,7 @@ function Font(props: IFontProps): React.ReactNode {
     semiBold ? (style.fontWeight = 600) : void 0;
 
     return (
-        <span className="pot-Font" style={style}>
+        <span className="dish-Font" style={style}>
             {children}
         </span>
     );

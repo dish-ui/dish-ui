@@ -21,7 +21,7 @@ function Button(props: IButtonProps): React.ReactElement {
 
     if (classNameSuffix) classNameSuffix = '-' + classNameSuffix;
 
-    return <div className={'pot-Button' + classNameSuffix}>{children}</div>;
+    return <div className={'dish-Button' + classNameSuffix}>{children}</div>;
 }
 
 Button.propTypes = {

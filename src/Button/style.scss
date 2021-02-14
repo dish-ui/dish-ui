@@ -5,12 +5,12 @@
   border: none;
   font-size: $font-size;
 
-  .pot-ButtonFooter {
+  .dish-ButtonFooter {
     font-size: $font-size-small;
   }
 }
 
-.pot-Button {
+.dish-Button {
   @include button-general;
 
   border: 1px solid $K700;
