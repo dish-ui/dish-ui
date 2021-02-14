@@ -18,7 +18,7 @@ function Button(props: IButtonProps): React.ReactElement {
     if (danger) classNameSuffix = 'danger';
     if (primary) classNameSuffix = 'primary';
 
-    if (classNameSuffix) classNameSuffix = '-' + classNameSuffix
+    if (classNameSuffix) classNameSuffix = '-' + classNameSuffix;
 
     return <div className={'pot-button' + classNameSuffix}>{children}</div>;
 }
@@ -26,6 +26,7 @@ function Button(props: IButtonProps): React.ReactElement {
 Button.propTypes = {
     primary: PropTypes.bool,
     danger: PropTypes.bool,
+    link: PropTypes.bool,
 };
 
 Button.defaultProps = {
