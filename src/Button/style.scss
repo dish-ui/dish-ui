@@ -2,6 +2,12 @@
 
 @mixin button-general {
   padding: 5px;
+  border: none;
+  font-size: $font-size;
+
+  .pot-button-footer {
+    font-size: $font-size-small;
+  }
 }
 
 .pot-button {
@@ -45,5 +51,13 @@
         background-color: $R600;
       }
     }
+  }
+
+  &-link {
+    font-size: $font-size;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
   }
 }
