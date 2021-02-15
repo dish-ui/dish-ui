@@ -1,4 +1,6 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
 module.exports = {
     entry: './src',
     output: {
@@ -50,5 +52,19 @@ module.exports = {
 				]
 			}
 		]
-	}
+	},
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    format: {
+                        comments: /^\**!/i
+                    }
+                },
+                extractComments: /^@preserve|@license|@cc_on/i,
+            }),
+            new webpack.BannerPlugin(`Dish UI ${require('./package.json').version}`)
+        ]
+    }
 }
