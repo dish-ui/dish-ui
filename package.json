@@ -43,8 +43,10 @@
     "dist/"
   ],
   "scripts": {
-    "build": "npx webpack",
+    "build": "npm run dist",
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s",
+    "dist": "npm run dist:ts",
+    "dist:ts": "npx webpack",
     "dist:remove": "rm -rf ./dist/ || erase /Q .\\dist\\",
     "format": "npx prettier --write \"src/**/*.{tsx,ts,js}\"",
     "format:check": "npx prettier --list-different \"src/**/*.{tsx,ts,js}\"",

@@ -64,7 +64,7 @@ module.exports = {
                 },
                 extractComments: /^@preserve|@license|@cc_on/i,
             }),
-            new webpack.BannerPlugin(`Dish UI ${require('./package.json').version}`)
+            new webpack.BannerPlugin(`Dish UI v${require('./package.json').version}\nMIT License`)
         ]
     }
 }
