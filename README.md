@@ -6,6 +6,7 @@ A components pack for React.
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/dish-ui/dish-ui?style=flat-square)
 ![GitHub Repo stars](https://img.shields.io/github/stars/dish-ui/dish-ui?style=flat-square)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/dish-ui/dish-ui/main?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dish-ui/dish-ui/Code%20Analysis?label=code%20analysis&style=flat-square)
 
 ## About
 Dish UI is a library for React 17 components,
