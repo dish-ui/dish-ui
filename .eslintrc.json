@@ -19,6 +19,7 @@
   "parser": "@babel/eslint-parser",
   "plugins": [
     "react",
+    "react-hooks",
     "@typescript-eslint/eslint-plugin"
   ],
   "rules": {
