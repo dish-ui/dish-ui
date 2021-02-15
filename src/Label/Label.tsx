@@ -10,7 +10,7 @@ function Font(props: ILabelProps): React.ReactNode {
     const { children, htmlFor } = props;
 
     return (
-        <label htmlFor={htmlFor} className="dish-Label">
+        <label htmlFor={htmlFor} className="dish-Label" role="Label">
             {children}
         </label>
     );
