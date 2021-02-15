@@ -17,7 +17,10 @@ do **NOT** install other React component libraries
 that are not part or plugin of dish-ui,
 which may cause conflicts.
 
-Design references: **Fluent Design**, **Material Design**, **React Suite**
+Design references: **Fluent Design**, Material Design, React Suite, Ant Design  
+*The order is from most referenced to least referenced*
+
+**Please note that is NOT a fork of the React frameworks**
 
 ### Style
 It's a modern half-plat style.
