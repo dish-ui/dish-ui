@@ -22,7 +22,19 @@
     "@typescript-eslint/eslint-plugin"
   ],
   "rules": {
-    "quotes": [2, "single", "avoid-escape"],
+    "eqeqeq": "warn",
+    "no-array-constructor": "warn",
+    "no-bitwise": "off",
+    "no-const-assign": "error",
+    "no-eval": "error",
+    "no-invalid-regexp": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-octal": "error",
+    "no-this-before-super": "error",
+    "no-unreachable": "error",
+    "no-var": "error",
+    "no-with": "error",
+    "quotes": ["error", "single", "avoid-escape"],
     "@typescript-eslint/no-explicit-any": "error"
   }
 }
