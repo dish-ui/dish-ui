@@ -58,11 +58,20 @@ module.exports = {
         minimizer: [
             new TerserPlugin({
                 terserOptions: {
-                    format: {
-                        comments: /^\**!/i
-                    }
+                    //format: {
+                    //    comments: /^\**!/i
+                    //}
                 },
-                extractComments: /^@preserve|@license|@cc_on/i,
+                extractComments: {
+                    condition: /^\**!|@preserve|@license|@cc_on/i,
+                    filename: (fileData) => {
+                        // The "fileData" argument contains object with "filename", "basename", "query" and "hash"
+                        return `${fileData.filename}.LICENSE.txt${fileData.query}`;
+                    },
+                    banner: (licenseFile) => {
+                        return `\n * Dish UI ${require('./package.json').version}\n * MIT License\n * \n * More license information can be found in ${licenseFile}\n`;
+                    },
+                },
             }),
             new webpack.BannerPlugin(`Dish UI v${require('./package.json').version}\nMIT License`)
         ]
