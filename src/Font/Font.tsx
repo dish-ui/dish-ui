@@ -1,6 +1,7 @@
 import React from 'react';
 import IComponentProps from '../utils/IComponentProps';
 import PropTypes from 'prop-types';
+import getComponentClassName from '../utils/getComponentClassName';
 
 interface IFontProps extends IComponentProps {
     bold: boolean;
@@ -18,7 +19,11 @@ function Font(props: IFontProps): React.ReactNode {
     semiBold ? (style.fontWeight = 600) : void 0;
 
     return (
-        <span className="dish-Font" style={style} role="Text">
+        <span
+            className={getComponentClassName('Font')}
+            style={style}
+            role="Text"
+        >
             {children}
         </span>
     );

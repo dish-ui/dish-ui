@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import IComponentProps from '../utils/IComponentProps';
 import ButtonFooter from './ButtonFooter';
+import getComponentClassName from '../utils/getComponentClassName';
 
 interface IButtonProps extends IComponentProps {
     primary: boolean;
@@ -19,10 +20,11 @@ function Button(props: IButtonProps): React.ReactElement {
     if (danger) classNameSuffix = 'danger';
     if (primary) classNameSuffix = 'primary';
 
-    if (classNameSuffix) classNameSuffix = '-' + classNameSuffix;
-
     return (
-        <button className={'dish-Button' + classNameSuffix} role="Button">
+        <button
+            className={getComponentClassName('Button', classNameSuffix)}
+            role="Button"
+        >
             {children}
         </button>
     );
