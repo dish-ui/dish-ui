@@ -1,12 +1,12 @@
 # Dish UI
-A components pack for React.
+A React components pack. Included desktop app components.
 
-[![License](https://img.shields.io/github/license/dish-ui/dish-ui?style=flat-square)](https://github.com/dish-ui/dish-ui/blob/main/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dish-ui/dish-ui/Code%20Analysis?label=&style=flat-square)](https://github.com/dish-ui/dish-ui/actions?query=workflow%3A%22Code+Analysis%22)
+[![License](https://img.shields.io/github/license/dish-ui/dish-ui?style=flat-square&label=)](https://github.com/dish-ui/dish-ui/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/dish-ui/dish-ui?style=flat-square)](https://github.com/dish-ui/dish-ui/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/dish-ui/dish-ui?style=flat-square)](https://github.com/dish-ui/dish-ui/pulls)
 [![GitHub Repo stars](https://img.shields.io/github/stars/dish-ui/dish-ui?style=flat-square)](https://github.com/dish-ui/dish-ui/stargazers)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/dish-ui/dish-ui/main?style=flat-square)](https://github.com/dish-ui/dish-ui/commits/main)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dish-ui/dish-ui/Code%20Analysis?label=code%20analysis&style=flat-square)](https://github.com/dish-ui/dish-ui/actions?query=workflow%3A%22Code+Analysis%22)
 
 ## About
 Dish UI is a library for React 17 components,
