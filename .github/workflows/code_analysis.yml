@@ -1,0 +1,19 @@
+name: Code Analysis
+on: push
+jobs:
+  codacy-cli:
+    runs-on: ubuntu-latest
+    name: Codacy Analysis CLI
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run codacy-analysis-cli
+        uses: codacy/codacy-analysis-cli-action@master
+        with:
+          tool: ESLint

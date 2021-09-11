@@ -1,0 +1,18 @@
+[*]
+indent_style = space
+
+[{*.js,*.ts,*.jsx,*.tsx,*.scss,*.md,*.json}]
+indent_size = 2
+
+[{*.js,*.jsx}]
+ij_javascript_use_double_quotes = false
+ij_javascript_force_quote_style = true
+ij_javascript_spaces_within_imports = true
+
+[{*.ts,*.tsx}]
+ij_typescript_use_double_quotes = false
+ij_typescript_force_quote_style = true
+ij_typescript_spaces_within_imports = true
+
+[*.scss]
+ij_scss_use_double_quotes = false

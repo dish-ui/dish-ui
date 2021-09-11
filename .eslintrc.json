@@ -1,0 +1,53 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "amd": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "rules": {
+    "import/no-unresolved": "off",
+    "eqeqeq": "warn",
+    "no-array-constructor": "warn",
+    "no-bitwise": "off",
+    "no-const-assign": "error",
+    "no-eval": "error",
+    "no-invalid-regexp": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-octal": "error",
+    "no-this-before-super": "error",
+    "no-unreachable": "error",
+    "no-var": "error",
+    "no-with": "error",
+    "quotes": ["error", "single", "avoid-escape"],
+    "@typescript-eslint/no-explicit-any": "error",
+    "import/namespace": "off",
+    "import/no-duplicates": "off",
+    "import/named": "off"
+  }
+}

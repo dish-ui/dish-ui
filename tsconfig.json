@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    // Thanks typescript for weird bugs
+    "target": "ES2020",
+    "module": "CommonJS",
+    "jsx": "react",
+    "types": [
+      "react"
+    ],
+    "outDir": "dist/",
+    "baseUrl": ".",
+    "paths": {
+      // Alias when import a package in another package
+      "@dish-ui/core": ["./packages/core"],
+      "@dish-ui/core/*": ["./packages/core/*"],
+    },
+  },
+  "include": [
+    "src/"
+  ]
+}

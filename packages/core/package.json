@@ -1,0 +1,26 @@
+{
+  "name": "@dish-ui/core",
+  "version": "0.0.1",
+  "description": "Core package of dish UI",
+  "author": "Dish UI Team",
+  "keywords": [
+    "react",
+    "react-component",
+    "dish-ui",
+    "techpot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dish-ui/dish-ui.git",
+    "directory": "packages/core"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.20"
+  },
+  "dependencies": {
+    "csstype": "^3.0.8"
+  }
+}
