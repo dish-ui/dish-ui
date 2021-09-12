@@ -12,7 +12,9 @@ jobs:
         with:
           node-version: 14
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          npm install -g yarn
+          yarn install
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli-action@master
         with:
