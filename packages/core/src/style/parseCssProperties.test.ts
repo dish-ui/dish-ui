@@ -18,13 +18,19 @@ describe('Parse CSS properties', function () {
           display: 'block',
 
           '&#id': {
-            fontSize: '17px'
-          }
+            fontSize: '17px',
+
+            '&:hover': {
+              fontSize: '18px',
+            },
+          },
         },
         '.cls'
       )
     ).to.be.deep.equal(
-      '.cls{font-size:16px;height:50px;width:50px;opacity:0.5;display:block;}.cls#id{font-size:17px;}'
+      '.cls{font-size:16px;height:50px;width:50px;opacity:0.5;display:block;}' +
+      '.cls#id{font-size:17px;}' +
+      '.cls#id:hover{font-size:18px;}'
     );
   });
 });

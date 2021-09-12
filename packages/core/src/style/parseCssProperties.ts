@@ -4,12 +4,12 @@ type CSSProperties = {
   [K in keyof PropertiesFallback | string]?: CSSProperties | string;
 };
 
-export default function parseCssProperties(property: CSSProperties, selector: string): string {
+export default function parseCssProperties(properties: CSSProperties, selector: string): string {
   let cssText = '';
 
   const parse = (obj, selector) => {
     cssText += selector + '{';
-    Object.keys(obj).map((property) => {
+    Object.keys(obj).forEach((property) => {
       if (typeof obj[property] === 'object') {
         cssText += '}';
         parse(obj[property], property.replace(/&/g, selector));
@@ -26,6 +26,6 @@ export default function parseCssProperties(property: CSSProperties, selector: st
     }
   };
 
-  parse(property, selector);
+  parse(properties, selector);
   return cssText;
 }
