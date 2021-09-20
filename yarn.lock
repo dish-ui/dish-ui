@@ -1345,7 +1345,9 @@ __metadata:
   dependencies:
     "@types/react": ^17.0.20
     chai: ^4.3.4
+    clsx: ^1.1.1
     csstype: ^3.0.8
+    prop-types: ^15.7.2
   peerDependencies:
     react: "*"
   languageName: unknown
@@ -3815,6 +3817,13 @@ __metadata:
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
   checksum: aaaa58f9906002d9c07630682536cb00581ee02d7a76cfa8573ad59784add4d5d6d4afe894c21899b974044f153f8c5c6419ffc8b1cdde61bf104ad52e3a185d
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "clsx@npm:1.1.1"
+  checksum: d8ae10ac0546da19fe8c9516886f6582a64a382cf4d09ea7d36d5287cafbdab1192ab249adc2cdf0310e0b0aeac4f4142cf7c738c98d9cb68c19ba24b6f673d5
   languageName: node
   linkType: hard
 

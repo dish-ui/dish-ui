@@ -29,9 +29,5 @@ export interface Theme {
     fontSize: FontConfig<number>;
     color: FontConfig<string> | string;
     spacing: number;
-    shadow: {
-      // Just four numbers
-      [K in 2 | 4 | 8 | 16]: number;
-    };
   };
 }

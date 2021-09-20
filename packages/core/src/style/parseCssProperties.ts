@@ -1,8 +1,4 @@
-import { PropertiesFallback } from 'csstype';
-
-type CSSProperties = {
-  [K in keyof PropertiesFallback | string]?: CSSProperties | string;
-};
+import {CSSProperties} from './style';
 
 export default function parseCssProperties(properties: CSSProperties, selector: string): string {
   let cssText = '';

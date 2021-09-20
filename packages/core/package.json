@@ -22,6 +22,8 @@
     "chai": "^4.3.4"
   },
   "dependencies": {
-    "csstype": "^3.0.8"
+    "clsx": "^1.1.1",
+    "csstype": "^3.0.8",
+    "prop-types": "^15.7.2"
   }
 }
